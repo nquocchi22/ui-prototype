@@ -4,35 +4,35 @@ html, body {
   margin: 0;
   background-color: #d0d4db;
 }
-.container div {
+.container .banner {
   width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   border: solid 0.1em #cfd2d6;
   background-color: #eaecef;
-}
-.banner {
   overflow: hidden;
 }
-.banner figure {
+.banner figure img,
+.banner figure .info
+{
+  width: 20%;
+  float: left;
+  height: 450px;
+}
+.banner figure
+{
   position: relative;
   width: 500%;
   margin: 0;
+  top: 0;
   left: 0;
   animation: 20s slider infinite;
 }
-.banner figure img {
-  width: 20%;
-  float: left;
-}
-figure > img {
-  position: relative;
-  float: left;
-  height: 450px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+figure .info
+{
+  position: absolute;
+  z-index: 1;
 }
 @keyframes slider {
   0% {

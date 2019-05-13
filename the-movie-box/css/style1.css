@@ -2,6 +2,7 @@ html, body {
   width: 100%;
   height: 100%;
   margin: 0;
+  padding: 0;
   background-color: #d0d4db;
 }
 .container .banner {
@@ -13,9 +14,10 @@ html, body {
   background-color: #eaecef;
   overflow: hidden;
 }
-.banner figure img,
-.banner figure .info
+figure img,
+figure .info
 {
+  display: block;
   width: 20%;
   float: left;
   height: 450px;
